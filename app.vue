@@ -63,7 +63,7 @@ watch(
 
         <section>
           <h3>Snelle links</h3>
-          <ul>
+          <ul class="link-list">
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/diensten">Diensten</NuxtLink></li>
             <li><NuxtLink to="/webhosting">Webhosting</NuxtLink></li>
@@ -78,21 +78,13 @@ watch(
 
         <section>
           <h3>Legal & Security</h3>
-          <ul>
+          <ul class="link-list legal-list">
             <li><NuxtLink to="/algemene-voorwaarden">Algemene voorwaarden</NuxtLink></li>
+            <li><NuxtLink to="/terms-and-conditions">Terms and conditions</NuxtLink></li>
             <li><NuxtLink to="/privacy-policy">Privacy policy</NuxtLink></li>
             <li><NuxtLink to="/cookie-policy">Cookie policy</NuxtLink></li>
             <li><NuxtLink to="/security">Security</NuxtLink></li>
             <li><NuxtLink to="/sla">SLA</NuxtLink></li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Contact</h3>
-          <ul>
-            <li><a href="mailto:hello@turinguard.io">hello@turinguard.io</a></li>
-            <li>Reactie binnen 1 werkdag</li>
-            <li>Remote en on-site audits</li>
           </ul>
         </section>
       </div>

@@ -1,6 +1,7 @@
+import { defineEventHandler, setHeader } from "h3"
+
 export default defineEventHandler((event) => {
-  const config = useRuntimeConfig(event)
-  const siteUrl = (config.public.siteUrl as string) || "https://www.turinguard.nl"
+  const siteUrl = "https://www.turinguard.nl"
 
   const pages = [
     "/",
@@ -15,7 +16,9 @@ export default defineEventHandler((event) => {
     "/kennisbank/phishing-herkennen",
     "/kennisbank/incident-response-checklist",
     "/kennisbank/wachtwoordbeleid",
+    "/kennisbank/beleid-security-audits",
     "/algemene-voorwaarden",
+    "/terms-and-conditions",
     "/privacy-policy",
     "/cookie-policy",
     "/security",

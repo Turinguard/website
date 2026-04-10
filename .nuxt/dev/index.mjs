@@ -758,7 +758,7 @@ const _inlineRuntimeConfig = {
         "tr": "prose-tr"
       },
       "highlight": false,
-      "wsUrl": "ws://localhost:4001/",
+      "wsUrl": "ws://localhost:4000/",
       "documentDriven": false,
       "host": "",
       "trailingSlash": false,
@@ -3214,16 +3214,16 @@ _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 const assets = {
   "/index.mjs": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"7d25c-CceaNR0OmCsWASAPREIiaoiMXLc\"",
-    "mtime": "2026-04-10T14:27:48.307Z",
-    "size": 512604,
+    "etag": "\"7d0c8-nv+T4OOtWRKpVg28CKK46SvqQRU\"",
+    "mtime": "2026-04-10T15:04:28.367Z",
+    "size": 512200,
     "path": "index.mjs"
   },
   "/index.mjs.map": {
     "type": "application/json",
-    "etag": "\"c2cb6-TxoLYbBvGeB3LdaTKGb4ZA5bEBI\"",
-    "mtime": "2026-04-10T14:27:48.310Z",
-    "size": 797878,
+    "etag": "\"c2d13-uU+dENd1uSvqCeDfZZRi4pcE4Ts\"",
+    "mtime": "2026-04-10T15:04:28.367Z",
+    "size": 797971,
     "path": "index.mjs.map"
   }
 };
@@ -13575,8 +13575,7 @@ const navigation = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const sitemap_xml = defineEventHandler((event) => {
-  const config = useRuntimeConfig(event);
-  const siteUrl = config.public.siteUrl || "https://www.turinguard.nl";
+  const siteUrl = "https://www.turinguard.nl";
   const pages = [
     "/",
     "/diensten",
@@ -13590,7 +13589,9 @@ const sitemap_xml = defineEventHandler((event) => {
     "/kennisbank/phishing-herkennen",
     "/kennisbank/incident-response-checklist",
     "/kennisbank/wachtwoordbeleid",
+    "/kennisbank/beleid-security-audits",
     "/algemene-voorwaarden",
+    "/terms-and-conditions",
     "/privacy-policy",
     "/cookie-policy",
     "/security",

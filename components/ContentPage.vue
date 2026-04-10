@@ -27,8 +27,10 @@ onMounted(() => {
   <ContentDoc :path="path" v-slot="{ doc }">
     <article class="content-page">
       <section class="hero">
-        <img src="/img/turinguard-logo.png" alt="Turinguard logo" class="hero-logo" />
-        <p class="eyebrow">CYBER SECURITY AUDITS</p>
+        <div class="hero-brand-strip">
+          <img src="/img/turinguard-logo.png" alt="Turinguard logo" class="hero-logo" />
+        </div>
+        <p class="eyebrow">TURINGUARD CYBER SECURITY SERVICES</p>
         <h1>{{ doc.title }}</h1>
         <p class="lead">{{ doc.lead || doc.description }}</p>
         <div v-if="doc.cta" class="cta-row">

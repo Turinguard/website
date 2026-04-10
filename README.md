@@ -19,10 +19,16 @@ Basis website voor Turinguard, een cyber security bedrijf dat security audits ui
 - /contact
 - /support
 - /kennisbank
+- /whitepapers
+- /whitepapers/security-audit-framework
+- /whitepapers/nis2-readiness-roadmap
+- /whitepapers/zero-trust-baseline
 - /kennisbank/phishing-herkennen
 - /kennisbank/incident-response-checklist
 - /kennisbank/wachtwoordbeleid
+- /kennisbank/beleid-security-audits
 - /algemene-voorwaarden
+- /terms-and-conditions
 - /privacy-policy
 - /cookie-policy
 - /security
