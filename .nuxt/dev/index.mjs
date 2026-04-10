@@ -758,7 +758,7 @@ const _inlineRuntimeConfig = {
         "tr": "prose-tr"
       },
       "highlight": false,
-      "wsUrl": "ws://localhost:4000/",
+      "wsUrl": "ws://localhost:4001/",
       "documentDriven": false,
       "host": "",
       "trailingSlash": false,
@@ -3204,29 +3204,43 @@ function onConsoleLog(callback) {
 	consola$1.wrapConsole();
 }
 
+const _NYZko6ROV7UWtXk4RnKt47fBuD6mll5EG2P17m3zlHU = defineNitroPlugin((nitroApp) => {
+  nitroApp.hooks.hook("afterResponse", (event) => {
+    var _a, _b, _c;
+    const statusCode = event.node.res.statusCode;
+    if (statusCode !== 404) {
+      return;
+    }
+    const req = event.node.req;
+    const method = event.method || req.method || "GET";
+    const path = event.path || req.url || "";
+    const host = req.headers.host || "-";
+    const referer = req.headers.referer || req.headers.referrer || "-";
+    const userAgent = req.headers["user-agent"] || "-";
+    const forwardedFor = req.headers["x-forwarded-for"];
+    const realIp = req.headers["x-real-ip"];
+    const remoteAddress = ((_a = req.socket) == null ? void 0 : _a.remoteAddress) || "-";
+    const ip = ((_c = (_b = Array.isArray(forwardedFor) ? forwardedFor[0] : forwardedFor) == null ? void 0 : _b.split(",")[0]) == null ? void 0 : _c.trim()) || (Array.isArray(realIp) ? realIp[0] : realIp) || remoteAddress;
+    const requestStart = Number(req.headers["x-request-start"]) || 0;
+    const durationMs = requestStart > 0 ? Date.now() - requestStart : 0;
+    if (path.startsWith("/_nuxt/") || path.startsWith("/__nuxt") || path === "/favicon.ico") {
+      return;
+    }
+    console.info(
+      `[404] ip=${ip} method=${method} host=${host} path=${path} referer=${referer} ua="${userAgent}" durationMs=${durationMs}`
+    );
+  });
+});
+
 const plugins = [
   _NOeWeDAFe0_RSvtTyXOCouDVaz4EFSKyL7EiVcL9WE,
 _XaW6WcsbYWRbXBV3CNSTO_fYYgs1wbFs3vdrkbAhfE,
 _U34q1_dWcPXAhZ7K6eTIjBvzHSCqlUD0922_poo5fJU,
+_NYZko6ROV7UWtXk4RnKt47fBuD6mll5EG2P17m3zlHU,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"7d0c8-nv+T4OOtWRKpVg28CKK46SvqQRU\"",
-    "mtime": "2026-04-10T15:04:28.367Z",
-    "size": 512200,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"c2d13-uU+dENd1uSvqCeDfZZRi4pcE4Ts\"",
-    "mtime": "2026-04-10T15:04:28.367Z",
-    "size": 797971,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));

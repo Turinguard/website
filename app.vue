@@ -90,7 +90,7 @@ watch(
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Turinguard. Alle rechten voorbehouden.</p>
+        <p>© 2026 Turinguard. Alle rechten voorbehouden. KvK: 42030744 | BTW-ID: NLXXXXXXXXXB01</p>
       </div>
     </footer>
   </div>
