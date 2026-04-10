@@ -22,3 +22,21 @@ Toetsing op kaders zoals ISO 27001 en NIS2, inclusief gap-analyse.
 ## Executive Risk Briefing
 
 Compacte board-level samenvatting van de grootste risico's en benodigde besluiten.
+
+## Webhosting (reseller)
+
+Stabiele webhosting voor bedrijfswebsites met security baseline en beheerondersteuning.
+
+[Bekijk webhosting](/webhosting)
+
+## VPS hosting (reseller)
+
+Flexibele VPS-capaciteit voor maatwerkomgevingen met hardening, patchbeleid en monitoring.
+
+[Bekijk VPS hosting](/vps-hosting)
+
+## Zakelijke mail (reseller)
+
+Professionele e-maildienst inclusief SPF, DKIM en DMARC inrichting voor betere beveiliging en deliverability.
+
+[Bekijk zakelijke mail](/zakelijke-mail)

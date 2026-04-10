@@ -66,6 +66,9 @@ watch(
           <ul>
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/diensten">Diensten</NuxtLink></li>
+            <li><NuxtLink to="/webhosting">Webhosting</NuxtLink></li>
+            <li><NuxtLink to="/vps-hosting">VPS hosting</NuxtLink></li>
+            <li><NuxtLink to="/zakelijke-mail">Zakelijke mail</NuxtLink></li>
             <li><NuxtLink to="/kennisbank">Kennisbank</NuxtLink></li>
             <li><NuxtLink to="/support">Support</NuxtLink></li>
             <li><NuxtLink to="/over-ons">Over ons</NuxtLink></li>

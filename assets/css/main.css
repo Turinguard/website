@@ -23,6 +23,7 @@ body,
 #__nuxt {
   margin: 0;
   min-height: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -35,6 +36,11 @@ body {
     var(--bg);
   line-height: 1.6;
   overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .page-wrap {
@@ -288,6 +294,7 @@ h1 {
 .content-card p,
 .content-card li {
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .content-card a {
@@ -322,6 +329,10 @@ h1 {
   gap: 1.2rem;
 }
 
+.footer-grid section {
+  min-width: 0;
+}
+
 .footer-grid h3 {
   margin: 0 0 0.5rem;
   font-size: 1rem;
@@ -344,6 +355,7 @@ h1 {
   color: var(--accent);
   text-decoration: none;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .footer-grid a:hover {

@@ -3211,7 +3211,22 @@ _U34q1_dWcPXAhZ7K6eTIjBvzHSCqlUD0922_poo5fJU,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"7d25c-CceaNR0OmCsWASAPREIiaoiMXLc\"",
+    "mtime": "2026-04-10T14:27:48.307Z",
+    "size": 512604,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"c2cb6-TxoLYbBvGeB3LdaTKGb4ZA5bEBI\"",
+    "mtime": "2026-04-10T14:27:48.310Z",
+    "size": 797878,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -13565,6 +13580,9 @@ const sitemap_xml = defineEventHandler((event) => {
   const pages = [
     "/",
     "/diensten",
+    "/webhosting",
+    "/vps-hosting",
+    "/zakelijke-mail",
     "/over-ons",
     "/contact",
     "/support",

@@ -12,6 +12,9 @@ Basis website voor Turinguard, een cyber security bedrijf dat security audits ui
 
 - /
 - /diensten
+- /webhosting
+- /vps-hosting
+- /zakelijke-mail
 - /over-ons
 - /contact
 - /support
