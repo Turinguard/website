@@ -14,8 +14,23 @@ Basis website voor Turinguard, een cyber security bedrijf dat security audits ui
 - /diensten
 - /over-ons
 - /contact
+- /support
+- /kennisbank
+- /kennisbank/phishing-herkennen
+- /kennisbank/incident-response-checklist
+- /kennisbank/wachtwoordbeleid
+- /algemene-voorwaarden
+- /privacy-policy
+- /cookie-policy
+- /security
+- /sla
 
 Alle pagina-content staat in de map content als markdown-bestanden.
+
+## SEO & Crawling
+
+- Sitemap route: /sitemap.xml
+- Robots bestand: public/robots.txt
 
 ## Project starten
 

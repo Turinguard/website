@@ -168,6 +168,8 @@ import { NuxtModule, ModuleDependencyMeta } from '@nuxt/schema'
    contentSchema: any,
   }
   interface SharedPublicRuntimeConfig {
+   siteUrl: string,
+
    mdc: {
       components: {
          prose: boolean,

@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { ref, watch } from "vue"
+import { useRoute } from "vue-router"
+
+const menuOpen = ref(false)
+const route = useRoute()
+
+watch(
+  () => route.fullPath,
+  () => {
+    menuOpen.value = false
+  }
+)
+</script>
+
 <template>
   <div class="page-wrap">
     <header class="topbar">
@@ -5,11 +20,27 @@
         <img src="/img/turinguard-icon.png" alt="Turinguard shield logo" class="brand-icon" />
         <span>Turinguard</span>
       </NuxtLink>
-      <nav>
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/diensten">Diensten</NuxtLink>
-        <NuxtLink to="/over-ons">Over ons</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        :aria-expanded="menuOpen"
+        aria-controls="main-menu"
+        aria-label="Open of sluit menu"
+        @click="menuOpen = !menuOpen"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-menu" :class="{ 'is-open': menuOpen }">
+        <NuxtLink to="/" @click="menuOpen = false">Home</NuxtLink>
+        <NuxtLink to="/diensten" @click="menuOpen = false">Diensten</NuxtLink>
+        <NuxtLink to="/kennisbank" @click="menuOpen = false">Kennisbank</NuxtLink>
+        <NuxtLink to="/support" @click="menuOpen = false">Support</NuxtLink>
+        <NuxtLink to="/over-ons" @click="menuOpen = false">Over ons</NuxtLink>
+        <NuxtLink to="/contact" @click="menuOpen = false">Contact</NuxtLink>
       </nav>
     </header>
 
@@ -35,8 +66,21 @@
           <ul>
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/diensten">Diensten</NuxtLink></li>
+            <li><NuxtLink to="/kennisbank">Kennisbank</NuxtLink></li>
+            <li><NuxtLink to="/support">Support</NuxtLink></li>
             <li><NuxtLink to="/over-ons">Over ons</NuxtLink></li>
             <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Legal & Security</h3>
+          <ul>
+            <li><NuxtLink to="/algemene-voorwaarden">Algemene voorwaarden</NuxtLink></li>
+            <li><NuxtLink to="/privacy-policy">Privacy policy</NuxtLink></li>
+            <li><NuxtLink to="/cookie-policy">Cookie policy</NuxtLink></li>
+            <li><NuxtLink to="/security">Security</NuxtLink></li>
+            <li><NuxtLink to="/sla">SLA</NuxtLink></li>
           </ul>
         </section>
 

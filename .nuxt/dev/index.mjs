@@ -3,7 +3,7 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, removeResponseHeader, getQuery as getQuery$1, readBody, appendHeader, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://C:/Users/AlbertoVE-K2304N/code/website/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, removeResponseHeader, getQuery as getQuery$1, readBody, appendHeader, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, setHeader, getResponseStatusText } from 'file://C:/Users/AlbertoVE-K2304N/code/website/node_modules/h3/dist/index.mjs';
 import { escapeHtml } from 'file://C:/Users/AlbertoVE-K2304N/code/website/node_modules/@vue/shared/dist/shared.cjs.js';
 import _RemarkEmoji from 'file://C:/Users/AlbertoVE-K2304N/code/website/node_modules/remark-emoji/index.js';
 import { createStorage, prefixStorage } from 'file://C:/Users/AlbertoVE-K2304N/code/website/node_modules/unstorage/dist/index.mjs';
@@ -673,6 +673,7 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "siteUrl": "https://www.turinguard.nl",
     "mdc": {
       "components": {
         "prose": true,
@@ -11502,10 +11503,12 @@ const _nlw1Ao = defineEventHandler(async (event) => {
   return createNav(contents?.result || contents, configs);
 });
 
+const _lazy_hpkTjv = () => Promise.resolve().then(function () { return sitemap_xml$1; });
 const _lazy_p4mSV0 = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
   { route: '', handler: _rvt_RX, lazy: false, middleware: true, method: undefined },
+  { route: '/sitemap.xml', handler: _lazy_hpkTjv, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_p4mSV0, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
   { route: '/__studio.json', handler: _l8Kzz2, lazy: false, middleware: false, method: "get" },
@@ -13554,6 +13557,47 @@ function isObject(obj) {
 const navigation = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   createNav: createNav
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const sitemap_xml = defineEventHandler((event) => {
+  const config = useRuntimeConfig(event);
+  const siteUrl = config.public.siteUrl || "https://www.turinguard.nl";
+  const pages = [
+    "/",
+    "/diensten",
+    "/over-ons",
+    "/contact",
+    "/support",
+    "/kennisbank",
+    "/kennisbank/phishing-herkennen",
+    "/kennisbank/incident-response-checklist",
+    "/kennisbank/wachtwoordbeleid",
+    "/algemene-voorwaarden",
+    "/privacy-policy",
+    "/cookie-policy",
+    "/security",
+    "/sla"
+  ];
+  const now = (/* @__PURE__ */ new Date()).toISOString();
+  const urls = pages.map((path) => {
+    return `
+  <url>
+    <loc>${siteUrl}${path}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${path === "/" ? "1.0" : "0.7"}</priority>
+  </url>`;
+  }).join("");
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}
+</urlset>`;
+  setHeader(event, "content-type", "application/xml; charset=utf-8");
+  return xml;
+});
+
+const sitemap_xml$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: sitemap_xml
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {
