@@ -6,6 +6,10 @@ export default defineEventHandler((event) => {
   const pages = [
     "/",
     "/diensten",
+    "/business-basis",
+    "/business-complete",
+    "/hosting",
+    "/security-pakketten",
     "/webhosting",
     "/vps-hosting",
     "/zakelijke-mail",

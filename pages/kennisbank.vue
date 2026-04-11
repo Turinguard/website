@@ -1,3 +1,3 @@
 <template>
-  <ContentPage path="/kennisbank" />
+  <NuxtPage />
 </template>

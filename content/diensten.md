@@ -1,42 +1,49 @@
 ---
-title: Auditdiensten
-description: Praktische security audits voor groeiende en volwassen organisaties.
-lead: Kies een gerichte audit of start met een complete nulmeting.
+title: Diensten en pakketten
+description: Business Basis, Business Complete, Hosting en Security pakketten van Turinguard.
+lead: Kies een helder pakket voor je online basis, hosting of security als core business.
 cta:
   label: Bespreek je scope
   to: /contact
 ---
 
-## Security Baseline Audit
+## Business Basis
 
-Een complete nulmeting van je technische en organisatorische beveiliging.
+Domainnaam, zakelijk e-mail, website en support in één eenvoudig pakket.
 
-## Cloud Security Review
+- Domainnaam en DNS
+- Zakelijke e-mail
+- Website of eenvoudige site
+- Support en basisbeheer
 
-Analyse van identity, netwerksegmentatie, secrets en detectie in je cloudomgeving.
+## Business Complete
 
-## Compliance Readiness
+Cloud, netwerk en systeembeheer voor organisaties met meerdere locaties en complexere IT-behoeften.
 
-Toetsing op kaders zoals ISO 27001 en NIS2, inclusief gap-analyse.
+- Beheer van Microsoft 365 en Google Workspace
+- Netwerken voor meerdere sites
+- Routers, switches, access points en camera's
+- Systeembeheer en monitoring
+- Offsite back-uping
 
-## Executive Risk Briefing
+Wij zijn geen Microsoft of Google partner, maar kunnen deze omgevingen wel beheren.
 
-Compacte board-level samenvatting van de grootste risico's en benodigde besluiten.
+## Hosting
 
-## Webhosting (reseller)
+Flexibele hostingpakketten voor organisaties die VPS of service hosting nodig hebben.
 
-Stabiele webhosting voor bedrijfswebsites met security baseline en beheerondersteuning.
+- VPS hosting
+- Service hosting
+- Monitoring
+- Patch- en back-upbeheer
 
-[Bekijk webhosting](/webhosting)
+## Security pakketten
 
-## VPS hosting (reseller)
+Security moet het uitgangspunt zijn. Dit is onze core business.
 
-Flexibele VPS-capaciteit voor maatwerkomgevingen met hardening, patchbeleid en monitoring.
+- Security baseline audit
+- Cloud en endpoint review
+- Compliance readiness
+- Incident response support
 
-[Bekijk VPS hosting](/vps-hosting)
-
-## Zakelijke mail (reseller)
-
-Professionele e-maildienst inclusief SPF, DKIM en DMARC inrichting voor betere beveiliging en deliverability.
-
-[Bekijk zakelijke mail](/zakelijke-mail)
+Voor security-trajecten maken we een duidelijke scope, planning en vervolgacties.

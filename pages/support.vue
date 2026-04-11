@@ -27,14 +27,14 @@ const mailtoLink = computed(() => {
     form.message || "-",
   ].join("\n")
 
-  return `mailto:support@turinguard.io?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  return `mailto:support@turinguard.nl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 })
 </script>
 
 <template>
   <article class="content-page">
     <section class="hero">
-      <img src="/img/turinguard-logo.png" alt="Turinguard logo" class="hero-logo" />
+      <img src="/img/turinguard-icon.png" alt="Turinguard logo" class="hero-logo" />
       <p class="eyebrow">SUPPORT SYSTEEM</p>
       <h1>Support & Incident Intake</h1>
       <p class="lead">
@@ -43,7 +43,7 @@ const mailtoLink = computed(() => {
       </p>
     </section>
 
-    <section class="support-layout reveal">
+    <section class="support-layout">
       <section class="support-card">
         <h2>Open een supportticket</h2>
         <form class="support-form" @submit.prevent>

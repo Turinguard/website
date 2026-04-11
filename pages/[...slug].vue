@@ -17,7 +17,7 @@ const missingPath = computed(() => route.path)
   <article class="content-page">
     <section class="hero">
       <div class="hero-brand-strip">
-        <img src="/img/turinguard-logo.png" alt="Turinguard logo" class="hero-logo" />
+        <img src="/img/turinguard-icon.png" alt="Turinguard logo" class="hero-logo" />
       </div>
       <p class="eyebrow">HTTP 404</p>
       <h1>Pagina niet gevonden</h1>

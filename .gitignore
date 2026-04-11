@@ -38,3 +38,4 @@ next-env.d.ts
 # Nuxt.js
 .nuxt/
 .data/
+.output/

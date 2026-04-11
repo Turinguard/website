@@ -3,8 +3,10 @@ title: Contact
 description: Start met een vrijblijvende intake voor een security audit.
 lead: Binnen 48 uur ontvang je een voorstel op maat.
 cta:
-  label: Mail direct
-  to: mailto:hello@turinguard.io
+  label: Start offerteaanvraag
+  to: '#offerte-form'
+quoteForm: true
+quotePackage: Algemene aanvraag
 ---
 
 ## Plan een intake
