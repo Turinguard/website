@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@nuxthq/studio"],
+  modules: ["@nuxt/content"],
   app: {
     head: {
       viewport: "width=device-width, initial-scale=1",
@@ -13,7 +13,4 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
-  studio: {
-    enabled: true,
-  },
 })
