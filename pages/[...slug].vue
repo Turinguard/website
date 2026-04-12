@@ -26,7 +26,7 @@ const missingPath = computed(() => route.path)
       </p>
       <div class="cta-row">
         <NuxtLink class="btn btn-primary" to="/">Terug naar home</NuxtLink>
-        <NuxtLink class="btn btn-ghost" to="/support">Support</NuxtLink>
+        <NuxtLink class="btn btn-ghost" to="/contact">Contact</NuxtLink>
       </div>
     </section>
   </article>

@@ -1,6 +1,6 @@
 ---
 title: Diensten en pakketten
-description: Business Basis, Business Complete, Hosting en Security pakketten van Turinguard.
+description: Business Basis, Netwerk Totaal, Hosting en Security Consultancy van Turinguard.
 lead: Kies een helder pakket voor je online basis, hosting of security als core business.
 cta:
   label: Bespreek je scope
@@ -16,17 +16,17 @@ Domainnaam, zakelijk e-mail, website en support in één eenvoudig pakket.
 - Website of eenvoudige site
 - Support en basisbeheer
 
-## Business Complete
+## Netwerk Totaal
 
-Cloud, netwerk en systeembeheer voor organisaties met meerdere locaties en complexere IT-behoeften.
+Netwerkbeheer, monitoring en onderhoud voor organisaties met meerdere locaties en complexere netwerkomgevingen.
 
-- Beheer van Microsoft 365 en Google Workspace
+- Beheer van routers, switches, access points en camera's
 - Netwerken voor meerdere sites
-- Routers, switches, access points en camera's
+- WiFi-inrichting en optimalisatie
 - Systeembeheer en monitoring
-- Offsite back-uping
+- Onderhoud en configuratiebeheer
 
-Wij zijn geen Microsoft of Google partner, maar kunnen deze omgevingen wel beheren.
+We richten ons op het beheer van netwerkinfrastructuur in de praktijk. Waar nodig werken we samen met bestaande leveranciers of IT-partners.
 
 ## Hosting
 
@@ -37,13 +37,13 @@ Flexibele hostingpakketten voor organisaties die VPS of service hosting nodig he
 - Monitoring
 - Patch- en back-upbeheer
 
-## Security pakketten
+## Security Consultancy
 
 Security moet het uitgangspunt zijn. Dit is onze core business.
 
-- Security baseline audit
-- Cloud en endpoint review
-- Compliance readiness
-- Incident response support
+- Baseline security audit
+- Risicoanalyse met rapport
+- Fix/advies op maat
+- Nazorg en vervolgadvies
 
-Voor security-trajecten maken we een duidelijke scope, planning en vervolgacties.
+Voor security consultancy starten we met een baseline audit, leveren we een risicoanalyse-rapport en voeren we daarna een fix/advies op maat uit.

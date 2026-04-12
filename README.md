@@ -17,7 +17,6 @@ Basis website voor Turinguard, een cyber security bedrijf dat security audits ui
 - /zakelijke-mail
 - /over-ons
 - /contact
-- /support
 - /kennisbank
 - /kennisbank/phishing-herkennen
 - /kennisbank/incident-response-checklist

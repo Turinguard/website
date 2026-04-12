@@ -72,7 +72,7 @@ main {
 
 .brand {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
   color: #122033;
@@ -83,8 +83,8 @@ main {
 }
 
 .brand-icon {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(31, 111, 185, 0.2));
 }
@@ -125,7 +125,7 @@ nav a {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  font-size: 0.94rem;
+  font-size: 1rem;
 }
 
 nav a:hover {
@@ -357,6 +357,63 @@ h1 {
   font-weight: 600;
 }
 
+.quote-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+  padding: 0.9rem;
+  background: rgba(12, 24, 39, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.cookie-banner-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  border: 1px solid #2b4a6d;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+  box-shadow: 0 10px 26px rgba(9, 23, 39, 0.28);
+  padding: 1rem;
+}
+
+.cookie-banner-content h3 {
+  margin: 0 0 0.35rem;
+}
+
+.cookie-banner-content p {
+  margin: 0;
+}
+
+.cookie-toggle {
+  margin-top: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 600;
+  color: #213b58;
+}
+
+.cookie-actions {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.cookie-banner .support-note {
+  margin-top: 0.75rem;
+}
+
 .site-footer {
   margin-top: 2rem;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
@@ -574,6 +631,13 @@ h1 {
   text-decoration: underline;
 }
 
+.kb-tags {
+  margin: 0.6rem 0 0;
+  color: #3b5f84;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(12px);
@@ -713,7 +777,12 @@ h1 {
   }
 
   .brand {
-    font-size: 1.03rem;
+    font-size: 1.14rem;
+  }
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
   }
 
   h1 {

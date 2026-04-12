@@ -4,7 +4,7 @@ description: Security-principes en beveiligingsmaatregelen van Turinguard.
 lead: Security is de kern van onze dienstverlening en interne bedrijfsvoering.
 cta:
   label: Meld security issue
-  to: /support
+  to: /contact
 ---
 
 ## Beveiligingsprincipes
@@ -26,4 +26,4 @@ Wij hanteren een risk-based aanpak met focus op preventie, detectie en respons.
 
 ## Responsible disclosure
 
-Heb je een kwetsbaarheid gevonden? Meld dit via support@turinguard.io met zoveel mogelijk technische details.
+Heb je een kwetsbaarheid gevonden? Meld dit via hello@turinguard.io met zoveel mogelijk technische details.

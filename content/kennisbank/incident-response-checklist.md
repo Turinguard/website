@@ -3,8 +3,8 @@ title: Incident response checklist
 description: Eerste acties na detectie van een security incident.
 lead: Snel, gestructureerd handelen vermindert impact en hersteltijd.
 cta:
-  label: Direct support
-  to: /support
+  label: Direct contact
+  to: /contact
 ---
 
 ## 1. Classificeer incident

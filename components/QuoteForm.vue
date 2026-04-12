@@ -14,11 +14,13 @@ const form = reactive({
   budget: "",
   timeline: "",
   message: "",
+  website: "",
 })
 
 const loading = ref(false)
 const sent = ref(false)
 const error = ref("")
+const formStartedAt = ref(Date.now())
 
 async function submitQuote() {
   if (loading.value) {
@@ -46,6 +48,8 @@ async function submitQuote() {
         budget: form.budget,
         timeline: form.timeline,
         message: form.message,
+        website: form.website,
+        formStartedAt: formStartedAt.value,
       },
     })
 
@@ -57,6 +61,8 @@ async function submitQuote() {
     form.budget = ""
     form.timeline = ""
     form.message = ""
+    form.website = ""
+    formStartedAt.value = Date.now()
   } catch {
     error.value = "Verzenden lukt nu niet. Probeer het opnieuw of neem contact op via support."
   } finally {
@@ -96,7 +102,7 @@ async function submitQuote() {
       <div class="support-grid">
         <label>
           Pakket
-          <input v-model="form.packageName" type="text" placeholder="Bijv. Security pakketten" />
+          <input v-model="form.packageName" type="text" placeholder="Bijv. Security Consultancy" />
         </label>
         <label>
           Gewenste start
@@ -122,6 +128,11 @@ async function submitQuote() {
           placeholder="Vertel kort wat je nodig hebt, welke omgeving je hebt en wat de prioriteit is."
           required
         ></textarea>
+      </label>
+
+      <label class="quote-hp" aria-hidden="true">
+        Website
+        <input v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
       </label>
 
       <button class="btn btn-primary" type="submit" :disabled="loading">

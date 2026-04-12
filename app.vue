@@ -38,7 +38,6 @@ watch(
         <NuxtLink to="/" @click="menuOpen = false">Home</NuxtLink>
         <NuxtLink to="/diensten" @click="menuOpen = false">Diensten</NuxtLink>
         <NuxtLink to="/kennisbank" @click="menuOpen = false">Kennisbank</NuxtLink>
-        <NuxtLink to="/support" @click="menuOpen = false">Support</NuxtLink>
         <NuxtLink to="/over-ons" @click="menuOpen = false">Over ons</NuxtLink>
         <NuxtLink to="/contact" @click="menuOpen = false">Contact</NuxtLink>
       </nav>
@@ -66,13 +65,18 @@ watch(
           <ul class="link-list">
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/diensten">Diensten</NuxtLink></li>
-            <li><NuxtLink to="/webhosting">Webhosting</NuxtLink></li>
-            <li><NuxtLink to="/vps-hosting">VPS hosting</NuxtLink></li>
-            <li><NuxtLink to="/zakelijke-mail">Zakelijke mail</NuxtLink></li>
             <li><NuxtLink to="/kennisbank">Kennisbank</NuxtLink></li>
-            <li><NuxtLink to="/support">Support</NuxtLink></li>
-            <li><NuxtLink to="/over-ons">Over ons</NuxtLink></li>
             <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Over Turinguard</h3>
+          <ul class="link-list legal-list">
+            <li><NuxtLink to="/over-ons">Over Turinguard</NuxtLink></li>
+            <li><NuxtLink to="/nieuws">Nieuwspagina</NuxtLink></li>
+            <li><a href="https://www.linkedin.com/company/turinguard/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/Turinguard" target="_blank" rel="noopener noreferrer">Open Source</a></li>          
           </ul>
         </section>
 
@@ -81,10 +85,11 @@ watch(
           <ul class="link-list legal-list">
             <li><NuxtLink to="/algemene-voorwaarden">Algemene voorwaarden</NuxtLink></li>
             <li><NuxtLink to="/terms-and-conditions">Terms and conditions</NuxtLink></li>
+            <li><NuxtLink to="/sla">Beschikbaarheidsregeling</NuxtLink></li>
             <li><NuxtLink to="/privacy-policy">Privacy policy</NuxtLink></li>
             <li><NuxtLink to="/cookie-policy">Cookie policy</NuxtLink></li>
-            <li><NuxtLink to="/security">Security</NuxtLink></li>
-            <li><NuxtLink to="/sla">SLA</NuxtLink></li>
+            <li><NuxtLink to="/security">Beveiliging</NuxtLink></li>
+            
           </ul>
         </section>
       </div>
@@ -93,5 +98,7 @@ watch(
         <p>© 2026 Turinguard. Alle rechten voorbehouden. KvK: 42030744 | BTW-ID: NLXXXXXXXXXB01</p>
       </div>
     </footer>
+
+    <CookieConsentBanner />
   </div>
 </template>

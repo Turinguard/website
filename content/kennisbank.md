@@ -3,8 +3,8 @@ title: Knowledge Base
 description: Praktische security handleidingen, checklists en best practices.
 lead: Vind snel concrete stappen om je security posture te verbeteren.
 cta:
-  label: Support nodig?
-  to: /support
+  label: Neem contact op
+  to: /contact
 ---
 
 ## Populaire artikelen

@@ -4,7 +4,7 @@ description: Richtlijnen voor sterk wachtwoord- en authenticatiebeleid.
 lead: Een praktisch beleid voorkomt hergebruik, zwakke wachtwoorden en accountmisbruik.
 cta:
   label: Meer hulp nodig
-  to: /support
+  to: /contact
 ---
 
 ## Beleidsbasis

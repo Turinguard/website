@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: "Diensten | Turinguard",
-  description: "Business Basis, Business Complete, Hosting en Security pakketten van Turinguard.",
+  description: "Business Basis, Netwerk Totaal, Hosting en Security Consultancy van Turinguard.",
 })
 
 const packages = [
@@ -13,16 +13,15 @@ const packages = [
     to: "/business-basis",
   },
   {
-    title: "Business Complete",
-    kicker: "Beheer voor groeiende organisaties",
-    description: "Cloud-, netwerk- en systeembeheer voor omgevingen met meerdere locaties en hogere beheerdruk.",
+    title: "Netwerk Totaal",
+    kicker: "Netwerken en beheer",
+    description: "Netwerkbeheer, monitoring en onderhoud voor omgevingen met meerdere locaties en apparaten.",
     items: [
-      "Microsoft/Google cloud beheer",
       "Netwerken met meerdere sites",
       "Routers, switches, access points en camera's",
-      "Systeembeheer, monitoring en offsite back-uping",
+      "Monitoring en onderhoud",
     ],
-    to: "/business-complete",
+    to: "/netwerk-totaal",
   },
   {
     title: "Hosting",
@@ -32,14 +31,17 @@ const packages = [
     to: "/hosting",
   },
   {
-    title: "Security pakketten",
+    title: "Security Consultancy",
     kicker: "De core business",
-    description: "Security moet het uitgangspunt zijn. Van audit tot hardening en incident readiness.",
-    items: ["Security baseline audit", "Cloud en endpoint review", "Compliance readiness", "Incident response support"],
-    to: "/security-pakketten",
+    description: "Baseline security audit, risicoanalyse-rapport en daarna fix op maat voor jouw omgeving.",
+    items: ["Baseline security audit", "Risicoanalyse met rapport", "Fix/advies op maat", "Nazorg en vervolgadvies"],
+    to: "/security-consultancy",
     featured: true,
   },
 ]
+
+const featuredPackage = packages.find((service) => service.featured)
+const regularPackages = packages.filter((service) => !service.featured)
 </script>
 
 <template>
@@ -50,15 +52,26 @@ const packages = [
       </div>
       <p class="eyebrow">DIENSTEN</p>
       <h1>Onze pakketten</h1>
-      <p class="lead">Vier duidelijke pakketten voor groei, beheer, stabiliteit en veiligheid. Security is onze kern.</p>
+      <p class="lead">Vier duidelijke pakketten voor groei, netwerkbeheer, stabiliteit en veiligheid. Security is onze kern.</p>
+    </section>
+
+    <section v-if="featuredPackage" class="package-featured-wrap">
+      <article class="package-card package-card-featured package-card-full">
+        <p class="package-kicker">{{ featuredPackage.kicker }}</p>
+        <h2>{{ featuredPackage.title }}</h2>
+        <p class="package-description">{{ featuredPackage.description }}</p>
+        <ul>
+          <li v-for="item in featuredPackage.items" :key="item">{{ item }}</li>
+        </ul>
+        <NuxtLink class="btn btn-primary" :to="featuredPackage.to">Bekijk details</NuxtLink>
+      </article>
     </section>
 
     <section class="package-grid">
       <article
-        v-for="service in packages"
+        v-for="service in regularPackages"
         :key="service.title"
         class="package-card"
-        :class="{ 'package-card-featured': service.featured }"
       >
         <p class="package-kicker">{{ service.kicker }}</p>
         <h2>{{ service.title }}</h2>
@@ -75,11 +88,19 @@ const packages = [
 </template>
 
 <style scoped>
+.package-featured-wrap {
+  margin-top: 1rem;
+}
+
 .package-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.package-card-full {
+  width: 100%;
 }
 
 .package-card {
@@ -93,6 +114,21 @@ const packages = [
 .package-card-featured {
   border-color: rgba(31, 111, 185, 0.35);
   background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+  padding: 1.8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-card-featured::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -38% auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(31, 111, 185, 0.12) 0%, transparent 72%);
+  pointer-events: none;
 }
 
 .package-kicker {
@@ -104,13 +140,26 @@ const packages = [
   font-weight: 700;
 }
 
+.package-card-featured .package-kicker {
+  margin-bottom: 0.55rem;
+}
+
 .package-card h2 {
   margin: 0 0 0.5rem;
+}
+
+.package-card-featured h2 {
+  font-size: clamp(1.55rem, 2.6vw, 2rem);
 }
 
 .package-description {
   margin: 0 0 0.9rem;
   color: var(--muted);
+}
+
+.package-card-featured .package-description {
+  max-width: 72ch;
+  margin: 0 auto 1rem;
 }
 
 .package-card ul {
@@ -121,8 +170,38 @@ const packages = [
   color: var(--muted);
 }
 
+.package-card-featured ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem 1rem;
+  max-width: 820px;
+}
+
+.package-card-featured li {
+  border: 1px solid rgba(31, 111, 185, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.76);
+  padding: 0.62rem 0.7rem;
+  font-weight: 600;
+  color: #294867;
+}
+
+.package-card-featured .btn {
+  min-width: 210px;
+}
+
 @media (max-width: 900px) {
   .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card-featured {
+    padding: 1.25rem;
+  }
+
+  .package-card-featured ul {
     grid-template-columns: 1fr;
   }
 }

@@ -3,8 +3,8 @@ title: Phishing herkennen
 description: Checklist om phishing sneller te detecteren en escaleren.
 lead: Met deze checklist beperk je klikrisico en versnel je incidentmelding.
 cta:
-  label: Open supportticket
-  to: /support
+  label: Neem contact op
+  to: /contact
 ---
 
 ## Controleer de afzender
@@ -21,4 +21,4 @@ Hover over links en controleer of URL, domein en doelpagina logisch zijn.
 
 ## Escalatie
 
-Bij twijfel: niet klikken, intern melden en indien nodig direct support contacteren.
+Bij twijfel: niet klikken, intern melden en indien nodig direct contact opnemen.

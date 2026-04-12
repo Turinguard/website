@@ -1,10 +1,10 @@
 ---
 title: Service Level Agreement (SLA)
-description: Overzicht van supportprioriteiten, responsetijden en serviceafspraken.
-lead: Duidelijke SLA-afspraken zorgen voor voorspelbare support en snelle incidentafhandeling.
+description: Overzicht van prioriteiten, responsetijden en serviceafspraken.
+lead: Duidelijke SLA-afspraken zorgen voor voorspelbare dienstverlening en snelle incidentafhandeling.
 cta:
-  label: Open supportticket
-  to: /support
+  label: Neem contact op
+  to: /contact
 ---
 
 ## Prioriteit en responstijd
@@ -19,7 +19,7 @@ cta:
 - Critical en High: 24/7 intake, opvolging volgens incidentclassificatie.
 - Medium en Low: tijdens kantooruren op werkdagen.
 
-## Scope van support
+## Scope van dienstverlening
 
 SLA geldt voor overeengekomen diensten en systemen binnen de contractuele scope.
 
