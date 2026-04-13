@@ -1,7 +1,7 @@
 ---
 title: Diensten en pakketten
-description: Business Basis, Netwerk Totaal, Hosting en Security Consultancy van Turinguard.
-lead: Kies een helder pakket voor je online basis, hosting of security als core business.
+description: Wij ontzorgen op netwerk, mail, telefonie en hosting zodat teams kunnen doorwerken.
+lead: Kies een helder pakket voor je online basis, netwerk en hosting en laat het beheer aan ons over.
 cta:
   label: Bespreek je scope
   to: /contact
@@ -9,11 +9,11 @@ cta:
 
 ## Business Basis
 
-Domainnaam, zakelijk e-mail, website en support in één eenvoudig pakket.
+Domeinnaam, zakelijke e-mail, website en support in een pakket dat wij beheren.
 
-- Domainnaam en DNS
+- Domeinnaam en DNS
 - Zakelijke e-mail
-- Website of eenvoudige site
+- WordPress of eenvoudige site
 - Support en basisbeheer
 
 ## Netwerk Totaal
@@ -26,11 +26,11 @@ Netwerkbeheer, monitoring en onderhoud voor organisaties met meerdere locaties e
 - Systeembeheer en monitoring
 - Onderhoud en configuratiebeheer
 
-We richten ons op het beheer van netwerkinfrastructuur in de praktijk. Waar nodig werken we samen met bestaande leveranciers of IT-partners.
+Wij dragen het beheer van de netwerkinfrastructuur en stemmen af met bestaande leveranciers of IT-partners waar nodig.
 
 ## Hosting
 
-Flexibele hostingpakketten voor organisaties die VPS of service hosting nodig hebben.
+Flexibele hostingpakketten voor organisaties die VPS of service hosting nodig hebben, met beheer en monitoring.
 
 - VPS hosting
 - Service hosting
@@ -39,11 +39,11 @@ Flexibele hostingpakketten voor organisaties die VPS of service hosting nodig he
 
 ## Security Consultancy
 
-Security moet het uitgangspunt zijn. Dit is onze core business.
+Security moet het uitgangspunt zijn. Wij nemen risico's weg zodat teams kunnen blijven werken.
 
 - Baseline security audit
 - Risicoanalyse met rapport
 - Fix/advies op maat
 - Nazorg en vervolgadvies
 
-Voor security consultancy starten we met een baseline audit, leveren we een risicoanalyse-rapport en voeren we daarna een fix/advies op maat uit.
+Voor security consultancy starten we met een baseline audit, leveren we een risicoanalyse-rapport en helpen we met fix/advies op maat.

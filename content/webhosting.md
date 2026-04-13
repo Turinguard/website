@@ -1,7 +1,7 @@
 ---
 title: Webhosting voor bedrijven
-description: Betrouwbare website hosting met security-first configuratie, beheer en support.
-lead: Schaalbare webhosting via betrouwbare reseller-infrastructuur, beheerd door Turinguard.
+description: Betrouwbare webhosting met beheer en security zodat jij zorgeloos kunt werken.
+lead: Schaalbare webhosting via een professionele infrastructuur, met Turinguard als beheerpartij.
 cta:
   label: Vraag een offerte aan
   to: /contact

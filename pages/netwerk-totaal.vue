@@ -1,3 +1,5 @@
-<template>
-  <ContentPage path="/netwerk-totaal" />
-</template>
+<script setup lang="ts">
+definePageMeta({
+	redirect: "/diensten/netwerk-totaal",
+})
+</script>

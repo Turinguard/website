@@ -1,7 +1,7 @@
 ---
 title: Security Consultancy
-description: Praktische security consultancy met baseline audit, risicoanalyse-rapport en fix/advies op maat.
-lead: We starten met een baseline security audit, leveren een helder risicoanalyse-rapport en voeren daarna een fix/advies op maat uit.
+description: Praktische security consultancy die risico's wegneemt zodat je team kan blijven focussen.
+lead: We brengen risico's in kaart, leveren een helder rapport en helpen direct met verbeteringen.
 cta:
   label: Start offerteaanvraag
   to: '#offerte-form'
@@ -38,10 +38,13 @@ quotePackage: Security Consultancy
 
 ## Korte FAQ
 
-### Zit de fix op maat standaard inbegrepen?
-
-De baseline audit en rapportage vormen de start. De fix op maat wordt daarna gepland op basis van de prioriteiten.
-
-### Kunnen jullie samenwerken met onze interne IT of partner?
-
-Ja. We werken regelmatig samen met interne teams en externe IT-partners.
+<div class="service-faq-list">
+  <details class="service-faq-item">
+    <summary>Zit de fix op maat standaard inbegrepen?</summary>
+    <p>De baseline audit en rapportage vormen de start. Daarna plannen we de fix op maat op basis van prioriteit.</p>
+  </details>
+  <details class="service-faq-item">
+    <summary>Kunnen jullie samenwerken met onze interne IT of partner?</summary>
+    <p>Ja. We werken regelmatig samen met interne teams en externe IT-partners.</p>
+  </details>
+</div>

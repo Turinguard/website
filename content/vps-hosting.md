@@ -1,7 +1,7 @@
 ---
 title: VPS hosting
-description: Flexibele VPS-oplossingen met security hardening, beheer en duidelijke scope.
-lead: Voor workloads die meer controle, performance en technische afstemming nodig hebben dan shared hosting.
+description: Flexibele VPS-oplossingen met beheer en hardening zodat jij je op het werk kunt richten.
+lead: Voor workloads die meer controle en performance vragen, zonder dat je zelf servers hoeft te beheren.
 cta:
   label: Vraag een offerte aan
   to: /contact

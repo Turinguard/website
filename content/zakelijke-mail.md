@@ -1,7 +1,7 @@
 ---
 title: Zakelijke mailoplossingen
-description: Veilige zakelijke e-mail met SPF, DKIM, DMARC, beheerondersteuning en duidelijke scope.
-lead: Professionele mail via reseller-platform, met focus op deliverability, continuïteit en bescherming tegen spoofing.
+description: Veilige zakelijke e-mail met beheer zodat jij geen omkijken hebt naar mailbeveiliging.
+lead: Professionele mail via een reseller-platform, met focus op deliverability, continuiteit en bescherming tegen spoofing.
 cta:
   label: Vraag een offerte aan
   to: /contact
@@ -24,6 +24,8 @@ Wij combineren e-mailhosting met security governance zodat je organisatie minder
 - Organisaties met meerdere mailboxen en domeinen.
 - Bedrijven die phishing en spoofing willen beperken.
 - Teams die e-mailbeveiliging serieus willen inrichten.
+
+## Praktische inrichting
 
 - SPF, DKIM en DMARC inrichting.
 - Basis anti-spam en anti-malware policy.

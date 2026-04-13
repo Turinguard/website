@@ -1,3 +1,5 @@
-<template>
-  <ContentPage path="/security-consultancy" />
-</template>
+<script setup lang="ts">
+definePageMeta({
+	redirect: "/diensten/security-consultancy",
+})
+</script>

@@ -1,3 +1,5 @@
-<template>
-  <ContentPage path="/hosting" />
-</template>
+<script setup lang="ts">
+definePageMeta({
+	redirect: "/diensten/hosting",
+})
+</script>

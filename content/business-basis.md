@@ -1,7 +1,7 @@
 ---
 title: Business Basis
-description: Domeinnaam, zakelijke e-mail, website en support in één helder pakket.
-lead: Een praktisch startpakket voor organisaties die hun online basis goed willen regelen.
+description: Domein, mail en website volledig beheerd zodat jij je werk kunt doen.
+lead: Wij nemen domein, e-mail en websitebeheer uit handen en blijven het onderhoud verzorgen.
 cta:
   label: Start offerteaanvraag
   to: '#offerte-form'
@@ -12,20 +12,20 @@ quotePackage: Business Basis
 ## Wat zit er in het pakket
 
 - Domeinnaamregistratie en DNS-inrichting.
-- Zakelijke e-mail voor het team.
+- Zakelijke e-mailaccounts voor het team.
 - Basiswebsite of landingpage op maat.
 - Support voor wijzigingen en vragen.
-- Hulp bij beheer, verlengingen en overdrachten.
+- Regie op beheer, verlengingen en overdrachten.
 
 ## Voor wie dit geschikt is
 
 - Startende organisaties die snel professioneel online willen staan.
 - Bedrijven die domein, mail en website in één lijn willen brengen.
-- Teams die één aanspreekpunt willen voor hun online basis.
+- Teams die een vast aanspreekpunt willen voor hun online basis.
 
 ## Hoe we werken
 
-We maken eerst de scope helder. Daarna richten we de basis in, testen we de onderdelen en zorgen we dat beheer overdraagbaar blijft.
+Jij geeft aan wat nodig is, wij richten alles in, testen de onderdelen en blijven het beheer verzorgen. Zo hoef jij niet te schakelen met meerdere leveranciers.
 
 ## Uitbreidingsmogelijkheden
 
@@ -40,10 +40,13 @@ We maken eerst de scope helder. Daarna richten we de basis in, testen we de onde
 
 ## Korte FAQ
 
-### Zit support inbegrepen?
-
-Ja. Basis support voor wijzigingen en vragen hoort bij het pakket.
-
-### Kunnen we later uitbreiden?
-
-Ja. Je kunt later eenvoudig mailboxen, pagina's en extra beheer toevoegen.
+<div class="service-faq-list">
+  <details class="service-faq-item">
+    <summary>Is support inbegrepen?</summary>
+    <p>Ja. We handelen wijzigingen en vragen direct af zodat je team door kan werken.</p>
+  </details>
+  <details class="service-faq-item">
+    <summary>Kunnen we later uitbreiden?</summary>
+    <p>Zeker. We schalen mee met extra mailboxen, pagina's en beheer zodra dat nodig is.</p>
+  </details>
+</div>
