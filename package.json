@@ -12,6 +12,6 @@
   "dependencies": {
     "@nuxt/content": "^3.12.0",
     "better-sqlite3": "^12.8.0",
-    "nuxt": "^3.12.4"
+    "nuxt": "^3.21.6"
   }
 }
